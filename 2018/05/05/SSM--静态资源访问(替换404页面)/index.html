@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="IDEA," />
+  <meta name="keywords" content="Spring,SpringMVC,MyBatis," />
 
 
 
@@ -86,25 +86,23 @@
 
 
 
-<meta name="description" content="New Project   新建maven项目，勾选create from archetype，选择maven-archetype-webapp  Next，填写GroupId，ArtifactId和Version(默认) Next，这里在Properties中添加一个参数archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡">
-<meta name="keywords" content="IDEA">
+<meta name="description" content="配置自定义的404页面，替换Tomcat不友好的404页面 常见404页面: 404也就是说找不到当前资源或者资源不存在 12The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. 替换思路：错误404">
+<meta name="keywords" content="Spring,SpringMVC,MyBatis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IDEA创建web">
-<meta property="og:url" content="q343509740.github.io/2018/04/29/IDEA创建web/index.html">
+<meta property="og:title" content="SSM--静态资源访问(替换404页面)">
+<meta property="og:url" content="q343509740.github.io/2018/05/05/SSM--静态资源访问(替换404页面)/index.html">
 <meta property="og:site_name" content="有天你会让我妒忌的.">
-<meta property="og:description" content="New Project   新建maven项目，勾选create from archetype，选择maven-archetype-webapp  Next，填写GroupId，ArtifactId和Version(默认) Next，这里在Properties中添加一个参数archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡">
+<meta property="og:description" content="配置自定义的404页面，替换Tomcat不友好的404页面 常见404页面: 404也就是说找不到当前资源或者资源不存在 12The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. 替换思路：错误404">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310170048752?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310165340280?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310170147121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310165519185?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310170411231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:image" content="https://img-blog.csdn.net/20180310170434808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
-<meta property="og:updated_time" content="2018-05-02T01:33:17.473Z">
+<meta property="og:image" content="/img/ssm02/11.png">
+<meta property="og:image" content="/img/ssm02/12.png">
+<meta property="og:image" content="/img/ssm02/13.png">
+<meta property="og:image" content="/img/ssm02/14.png">
+<meta property="og:updated_time" content="2018-05-05T02:14:38.699Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IDEA创建web">
-<meta name="twitter:description" content="New Project   新建maven项目，勾选create from archetype，选择maven-archetype-webapp  Next，填写GroupId，ArtifactId和Version(默认) Next，这里在Properties中添加一个参数archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡">
-<meta name="twitter:image" content="https://img-blog.csdn.net/20180310170048752?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta name="twitter:title" content="SSM--静态资源访问(替换404页面)">
+<meta name="twitter:description" content="配置自定义的404页面，替换Tomcat不友好的404页面 常见404页面: 404也就是说找不到当前资源或者资源不存在 12The origin server did not find a current representation for the target resource or is not willing to disclose that one exists. 替换思路：错误404">
+<meta name="twitter:image" content="/img/ssm02/11.png">
 
 
 
@@ -134,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="q343509740.github.io/2018/04/29/IDEA创建web/"/>
+  <link rel="canonical" href="q343509740.github.io/2018/05/05/SSM--静态资源访问(替换404页面)/"/>
 
 
 
 
 
-  <title>IDEA创建web | 有天你会让我妒忌的.</title>
+  <title>SSM--静态资源访问(替换404页面) | 有天你会让我妒忌的.</title>
   
 
 
@@ -311,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="q343509740.github.io/2018/04/29/IDEA创建web/">
+    <link itemprop="mainEntityOfPage" href="q343509740.github.io/2018/05/05/SSM--静态资源访问(替换404页面)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="黑凤梨">
@@ -328,7 +326,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">IDEA创建web</h2>
+          <h2 class="post-title" itemprop="name headline">SSM--静态资源访问(替换404页面)</h2>
         
 
         <div class="post-meta">
@@ -340,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-29T10:40:41+08:00">
-                2018-04-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-05T10:04:57+08:00">
+                2018-05-05
               </time>
             
 
@@ -350,6 +348,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SSM/" itemprop="url" rel="index">
+                    <span itemprop="name">SSM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -378,22 +398,24 @@
       
 
       
-        <center><br>    <h1>New Project</h1><br></center>
-
-
-<p>新建maven项目，勾选create from archetype，选择maven-archetype-webapp</p>
-<p><img src="https://img-blog.csdn.net/20180310170048752?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>Next，填写GroupId，ArtifactId和Version(默认)</p>
-<p><img src="https://img-blog.csdn.net/20180310165340280?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"><br>Next，这里在Properties中添加一个参数<b>archetypeCatalog=internal</b>，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡住。</p>
-<p>来自网上的解释：<br>    archetypeCatalog表示插件使用的archetype元数据，不加这个参数时默认为remote，local，即中央仓库archetype元数据，由于中央仓库的archetype太多了，所以导致很慢，指定internal来表示仅使用内部元数据。</p>
-<p><img src="https://img-blog.csdn.net/20180310170147121?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>Next，填写项目名称和module名称(默认)。</p>
-<p><img src="https://img-blog.csdn.net/20180310165519185?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>点击Finish。</p>
-<p><img src="https://img-blog.csdn.net/20180310170411231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>点击Enable Auto-Import(自动导入包)</p>
-<p>项目的目录结构如下：</p>
-<p><img src="https://img-blog.csdn.net/20180310170434808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcTM0MzUwOTc0MA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
+        <p>配置自定义的404页面，替换Tomcat不友好的404页面</p>
+<p><b>常见404页面:</b><br><img src="/img/ssm02/11.png"></p>
+<p><b>404也就是说找不到当前资源或者资源不存在</b></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The origin server did not find a current representation for the target resource </span><br><span class="line">or is not willing to disclose that one exists.</span><br></pre></td></tr></table></figure>
+<p><b>替换思路：错误404这种常出现的页面，我们可以设置为静态资源，以加快网页访问。</b></p>
+<p><hr></p>
+<p><h3>第一步：我们需要先把WEB-INF\web.xml下面的mvc-dispatcher更改为全局配置。</h3><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- spring4 mvc BEGIN --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>springMVC<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span> <span class="comment">&lt;!-- mvc调度器 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 配置springMVC需要加载的配置文件</span></span><br><span class="line"><span class="comment">        spring-dao.xml,spring-service.xml,spring-web.xml</span></span><br><span class="line"><span class="comment">        Mybatis - &gt; spring -&gt; springmvc</span></span><br><span class="line"><span class="comment">     --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>contextConfigLocation<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>classpath:spring/spring-*.xml<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>springMVC<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 默认匹配所有的静态资源,此处配置出错,会产生错误500 --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 我们默认配置这个是为了让我们的Spring框架接管Servelt，实现Spring控制所有站点请求 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- spring4 mvc END --&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>  错误404的页面是常用页面之一，所以我们在项目的资源目录（webapp）下创建一个static目录，专门用来存放静态资源，如js、css、错误提示页面、登录、注册页面等等。页面都存放在view中</p>
+<p><b>建立完目录如下</b></p>
+<p><img src="/img/ssm02/12.png"></p>
+<p><hr></p>
+<p><h3>第二步：在web.xml中添加错误页面的资源</h3><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 添加错误页面的资源 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">error-page</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">error-code</span>&gt;</span>404<span class="tag">&lt;/<span class="name">error-code</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">location</span>&gt;</span>/static/view/404.html<span class="tag">&lt;/<span class="name">location</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">error-page</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><b>不过配好后启动项目输入错误页面还是不能正常显示自己配置的404页面，相关图片走丢了</b><br><img src="/img/ssm02/13.png"></p>
+<p><hr></p>
+<p><h3>第三步：在spring目录下写spring-web.xml，用于控制哪些资源被拦截。</h3><br><b>spring-web.xml</b><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;  </span><br><span class="line">&lt;beans xmlns=<span class="string">"http://www.springframework.org/schema/beans"</span>  </span><br><span class="line">       xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span>  </span><br><span class="line">       xmlns:p=<span class="string">"http://www.springframework.org/schema/p"</span>  </span><br><span class="line">       xmlns:mvc=<span class="string">"http://www.springframework.org/schema/mvc"</span>  </span><br><span class="line">       xmlns:context=<span class="string">"http://www.springframework.org/schema/context"</span>  </span><br><span class="line">       xsi:schemaLocation=<span class="string">"  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/beans  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/context  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/context/spring-context-3.0.xsd  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/mvc  </span></span><br><span class="line"><span class="string">    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"</span>&gt;  </span><br><span class="line">  </span><br><span class="line">    &lt;!-- 配置SpringMVC --&gt;  </span><br><span class="line">    &lt;!-- <span class="number">1</span>.开启SpringMVC注解模式 --&gt;  </span><br><span class="line">    &lt;!-- 简化配置：  </span><br><span class="line">        (<span class="number">1</span>)自动注册DefaultAnootationHandlerMapping,AnotationMethodHandlerAdapter  </span><br><span class="line">        (<span class="number">2</span>)提供一些列：数据绑定，数字和日期的format <span class="meta">@NumberFormat</span>, <span class="meta">@DateTimeFormat</span>, xml,json默认读写支持  </span><br><span class="line">    --&gt;  </span><br><span class="line">    &lt;mvc:annotation-driven/&gt;  </span><br><span class="line">  </span><br><span class="line">    &lt;!-- <span class="number">2</span>.静态资源默认servlet配置  </span><br><span class="line">        (<span class="number">1</span>)加入对静态资源的处理：js,gif,png  </span><br><span class="line">        (<span class="number">2</span>)允许使用<span class="string">"/"</span>做整体映射  </span><br><span class="line">     --&gt;  </span><br><span class="line">    &lt;mvc:resources mapping=<span class="string">"/css/**"</span> location=<span class="string">"/static/css/"</span> /&gt;  </span><br><span class="line">    &lt;mvc:resources mapping=<span class="string">"/js/**"</span> location=<span class="string">"/static/js/"</span>/&gt;  </span><br><span class="line">    &lt;mvc:resources mapping=<span class="string">"/images/**"</span> location=<span class="string">"/static/images/"</span>/&gt;  </span><br><span class="line">    &lt;mvc:<span class="keyword">default</span>-servlet-handler/&gt;  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    &lt;!-- <span class="number">3</span>.配置jsp 显示ViewResolver --&gt;  </span><br><span class="line">    &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"org.springframework.web.servlet.view.InternalResourceViewResolver"</span>&gt;  </span><br><span class="line">        &lt;property name=<span class="string">"prefix"</span> value=<span class="string">"/WEB-INF/view/"</span>/&gt;  </span><br><span class="line">        &lt;property name=<span class="string">"suffix"</span> value=<span class="string">".jsp"</span>/&gt;  </span><br><span class="line">    &lt;/bean&gt;  </span><br><span class="line">  </span><br><span class="line">    &lt;!-- <span class="number">4</span>.扫描web相关的bean --&gt;  </span><br><span class="line">    &lt;context:component-scan base-<span class="keyword">package</span>=<span class="string">"com.ray.web"</span>/&gt;  </span><br><span class="line">&lt;/beans&gt;</span><br></pre></td></tr></table></figure></p>
+<p><b>404.html</b><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"images/404.png"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>以上文件配置好后，重启服务器，并输入错误地址，现在插入的404页面正常显示了。</p>
+<p>这个是我的404页面<br><img src="/img/ssm02/14.png"></p>
 
       
     </div>
@@ -411,7 +433,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/IDEA/" rel="tag"><i class="fa fa-tag"></i> IDEA</a>
+            <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i> Spring</a>
+          
+            <a href="/tags/SpringMVC/" rel="tag"><i class="fa fa-tag"></i> SpringMVC</a>
+          
+            <a href="/tags/MyBatis/" rel="tag"><i class="fa fa-tag"></i> MyBatis</a>
           
         </div>
       
@@ -424,15 +450,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/04/Git上传下载/" rel="next" title="Git上传下载">
+                <i class="fa fa-chevron-left"></i> Git上传下载
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/29/Hexo常用指令/" rel="prev" title="Hexo常用指令">
-                Hexo常用指令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -606,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">New Project</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">第一步：我们需要先把WEB-INF\web.xml下面的mvc-dispatcher更改为全局配置。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">第二步：在web.xml中添加错误页面的资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">第三步：在spring目录下写spring-web.xml，用于控制哪些资源被拦截。</span></a></li></ol></div>
             
 
           </div>
