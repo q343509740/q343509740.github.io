@@ -5,7 +5,7 @@
     <url>%2F2018%2F05%2F11%2F%E6%A0%B8%E5%BF%83%E5%91%BD%E4%BB%A4(%E5%AF%86%E7%A0%81)%2F</url>
     <content type="text"><![CDATA[文章加密访问具体实现方法打开themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件,在以下位置插入这样一段代码：12345678910&lt;script&gt; (function()&#123; if('&#123;&#123; page.password &#125;&#125;')&#123; if (prompt('请输入文章密码') !== '&#123;&#123; page.password &#125;&#125;')&#123; alert('密码错误！'); history.back(); &#125; &#125; &#125;)();&lt;/script&gt; 然后在文章上写成类似这样： Hexo 本地测试1hexo s -p 8088 Hexo 上传仓库1hexo clean &amp;&amp; hexo g &amp;&amp; hexo d]]></content>
       <categories>
-        <category>Testing</category>
+        <category>Lock</category>
       </categories>
       <tags>
         <tag>Git</tag>
@@ -149,6 +149,14 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[IDEA创建web]]></title>
+    <url>%2F2018%2F04%2F29%2FIDEA%E5%88%9B%E5%BB%BAweb%2F</url>
+    <content type="text"><![CDATA[New Project 新建maven项目，勾选create from archetype，选择maven-archetype-webapp Next，填写GroupId，ArtifactId和Version(默认) Next，这里在Properties中添加一个参数archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡住。 来自网上的解释： archetypeCatalog表示插件使用的archetype元数据，不加这个参数时默认为remote，local，即中央仓库archetype元数据，由于中央仓库的archetype太多了，所以导致很慢，指定internal来表示仅使用内部元数据。 Next，填写项目名称和module名称(默认)。 点击Finish。 点击Enable Auto-Import(自动导入包) 项目的目录结构如下：]]></content>
+      <tags>
+        <tag>IDEA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo常用指令]]></title>
     <url>%2F2018%2F04%2F29%2FHexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[常用指令 init$ hexo init [folder]新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。 new$ hexo new [layout] [title]新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。 generate$ hexo generate生成静态文件。该命令可以简写为$ hexo g publish$ hexo publish [layout] [filename]发表草稿。 server$ hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。-p, –port 重设端口$ hexo server -p 8088访问网址为： http://localhost:8088/。 deploy$ hexo deploy部署网站。该命令可以简写为：$ hexo d render$ hexo render [file1] [file2] …渲染文件。 migrate$ hexo migrate [type]从其他博客系统 迁移内容。 clean$ hexo clean清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。 list$ hexo list [type]列出网站资料。 version$ hexo version显示 Hexo 版本。]]></content>
@@ -157,14 +165,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[IDEA创建web]]></title>
-    <url>%2F2018%2F04%2F29%2FIDEA%E5%88%9B%E5%BB%BAweb%2F</url>
-    <content type="text"><![CDATA[New Project 新建maven项目，勾选create from archetype，选择maven-archetype-webapp Next，填写GroupId，ArtifactId和Version(默认) Next，这里在Properties中添加一个参数archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候会直接卡住。 来自网上的解释： archetypeCatalog表示插件使用的archetype元数据，不加这个参数时默认为remote，local，即中央仓库archetype元数据，由于中央仓库的archetype太多了，所以导致很慢，指定internal来表示仅使用内部元数据。 Next，填写项目名称和module名称(默认)。 点击Finish。 点击Enable Auto-Import(自动导入包) 项目的目录结构如下：]]></content>
-      <tags>
-        <tag>IDEA</tag>
       </tags>
   </entry>
 </search>
