@@ -95,20 +95,20 @@
 
 
 
-<meta name="description" content="文章加密访问具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
+<meta name="description" content="加密文章访问      具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
 <meta name="keywords" content="Git,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="核心命令">
 <meta property="og:url" content="q343509740.github.io/2018/05/11/核心命令(密码)/index.html">
 <meta property="og:site_name" content="有天你会让我妒忌的.">
-<meta property="og:description" content="文章加密访问具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
+<meta property="og:description" content="加密文章访问      具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="/img/mi/01.png">
 <meta property="og:image" content="/img/mi/02.png">
-<meta property="og:updated_time" content="2018-05-11T09:37:58.104Z">
+<meta property="og:updated_time" content="2018-07-13T00:33:36.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="核心命令">
-<meta name="twitter:description" content="文章加密访问具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
+<meta name="twitter:description" content="加密文章访问      具体实现方法打开themes-&amp;gt;next-&amp;gt;layout-&amp;gt;_partials-&amp;gt;head.swig文件,在以下位置插入这样一段代码：12345678910&amp;lt;script&amp;gt;    (function()&amp;#123;        if(&apos;&amp;#123;&amp;#123; page.password &amp;#125;&amp;#125;&apos;)&amp;#123;">
 <meta name="twitter:image" content="/img/mi/01.png">
 
 
@@ -407,7 +407,13 @@
       
 
       
-        <p><h2>文章加密访问</h2><br>具体实现方法<br>打开themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件,在以下位置插入这样一段代码：<br><img src="/img/mi/01.png"><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误！'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+        <h2>加密文章访问</h2>
+
+
+
+
+
+<p>具体实现方法<br>打开themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件,在以下位置插入这样一段代码：<br><img src="/img/mi/01.png"><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误！'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>然后在文章上写成类似这样：<br><img src="/img/mi/02.png"></p>
 <hr>
 <p><h2>Hexo 本地测试</h2><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p <span class="number">8088</span></span><br></pre></td></tr></table></figure></p>
@@ -455,6 +461,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/29/Cmd Markdown 编辑阅读器/" rel="prev" title="Cmd Markdown 使用说明">
+                Cmd Markdown 使用说明 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -535,7 +545,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -557,7 +567,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -628,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">文章加密访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Hexo 本地测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Hexo 上传仓库</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">加密文章访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Hexo 本地测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Hexo 上传仓库</span></a></li></ol></div>
             
 
           </div>
@@ -668,7 +678,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共19.1k字</span>
+  <span class="post-count">博客全站共22.1k字</span>
 </div>
 
         
